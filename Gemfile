@@ -28,6 +28,7 @@ gem 'rails_12factor'
 
 gem 'capistrano-locally', require: false
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+gem 'capistrano-passenger', '~> 0.2.0'
 
 
 # Reduces boot times through caching; required in config/boot.rb

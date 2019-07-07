@@ -23,6 +23,7 @@ require 'capistrano/rails'
 require 'capistrano/passenger'
 require 'capistrano/locally'
 require 'capistrano/rails/assets'
+require 'capistrano/passenger/no_hook'
 
 # Include tasks from other gems included in your Gemfile
 #
