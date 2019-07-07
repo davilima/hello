@@ -26,7 +26,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
@@ -89,9 +89,20 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/tmp' }
+  #set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/home/deploy/passenger_tmp' }
 
+#export SECRET_KEY_BASE=fdb4ee2c14cca27ad2d61b39e1a6258aacb6d68940352f4dcfa9f8c60224655e626693c03aef0fbd5b6e49aff3eb4ecf1fee4c4b415b77fe01632ade28740f7a
 #fdb4ee2c14cca27ad2d61b39e1a6258aacb6d68940352f4dcfa9f8c60224655e626693c03aef0fbd5b6e49aff3eb4ecf1fee4c4b415b77fe01632ade28740f7a
+
+
+#export #SECRET_KEY_BASE=2c6d16d67a992020ea36691868a93fb4e3490b2e1814d2689f0fc3184647d262e88253532c6ff3e0320e2c228cc7f875b12f1b88a3ab732425fb7a11eeaa7493
+
+#export PASSENGER_INSTANCE_REGISTRY_DIR=/my_temp-dir
+#sudo -E passenger-status
+
+#sudo netstat -plten
+#kill -9 16085
+
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write

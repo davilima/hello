@@ -24,9 +24,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'rails_12factor'
 
-gem 'capistrano-locally', require: false
+
+
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
 
@@ -43,9 +43,11 @@ group :development do
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rails", "~> 1.4", require: false
   gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano-locally', require: false
 
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  #gem 'web-console', '>= 3.3.0'
+  #gem 'listen', '>= 3.0.5', '< 3.2'
+  #gem 'rails_12factor'
 end
 
 group :development do
