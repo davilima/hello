@@ -3,9 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem "therubyracer"
-gem "execjs"
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0.rc1'
 # Use sqlite3 as the database for Active Record
@@ -31,7 +28,6 @@ gem 'rails_12factor'
 
 gem 'capistrano-locally', require: false
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
-gem 'capistrano-passenger', '~> 0.2.0'
 
 
 # Reduces boot times through caching; required in config/boot.rb

@@ -89,6 +89,9 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  set :default_env, { 'PASSENGER_INSTANCE_REGISTRY_DIR' => '/tmp' }
+
+#fdb4ee2c14cca27ad2d61b39e1a6258aacb6d68940352f4dcfa9f8c60224655e626693c03aef0fbd5b6e49aff3eb4ecf1fee4c4b415b77fe01632ade28740f7a
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write

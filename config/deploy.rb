@@ -13,6 +13,11 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 # Only keep the last 5 releases to save disk space
 set :keep_releases, 5
 
+set :passenger_restart_with_sudo, true
+set :passenger_restart_with_touch, false
+set :passenger_restart_command, 'passenger-config restart-app'
+set :passenger_restart_options, -> { "#{deploy_to} --ignore-app-not-running" }
+
 # after :deploy, :'passenger:restart'
 
 # Optionally, you can symlink your database.yml and/or secrets.yml file from the shared directory during deploy
