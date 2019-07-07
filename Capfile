@@ -21,6 +21,8 @@ require 'capistrano/deploy'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 require 'capistrano/passenger'
+require 'capistrano/locally'
+require 'capistrano/rails/assets'
 
 # Include tasks from other gems included in your Gemfile
 #
